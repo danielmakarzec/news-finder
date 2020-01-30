@@ -50,8 +50,13 @@ class Search extends React.Component {
 
   render(){
     return (
-      <div className='d-flex'>
-        { this.state.selectedArticleUrl ? <ArticleMini /> : <SearchBar search={this.search}/> }
+      <div id='search'>
+        {
+          this.state.selectedArticleUrl ?
+          <ArticleMini url={this.state.selectedArticleUrl} data={this.state.searchData} selected={this.selected}/>
+          :
+          <SearchBar search={this.search}/>
+        }
         <ArticlesList data={this.state.searchData} selected={this.selected}/>
       </div>
     )

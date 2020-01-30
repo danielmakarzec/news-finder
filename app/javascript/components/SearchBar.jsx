@@ -8,8 +8,8 @@ class SearchBar extends React.Component {
 
   render(){
     return (
-      <div className="searchBar col-8">
-        <input
+      <div id='searchBar' className="">
+        <input autoFocus
           className='search'
           type="text"
           onChange={this.handleChange}

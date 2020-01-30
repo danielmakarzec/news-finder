@@ -14,7 +14,7 @@ class App extends React.Component {
   render(){
     return (
       <BrowserRouter>
-        <div>
+        <div id='app'>
           <Nav />
           <Switch>
             <Route path='/' component={Search} exact/>
