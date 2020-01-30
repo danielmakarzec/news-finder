@@ -1,15 +1,16 @@
 import React from 'react'
 
-const ArticleList = () => {
+import Article from './Article'
 
-  return(
-    <div>
-      <ul>
-        <li>article-1</li>
-        <li>article-2</li>
-        <li>article-3</li>
-        <li>article-4</li>
-      </ul>
+const ArticleList = (props) => {
+
+  return (
+    <div className='col-4'>
+      {
+        props.data.map((article, index) => {
+        return <Article key={index} article={article} selected={props.selected} />
+        })
+      }
     </div>
   )
 }

@@ -13,6 +13,15 @@ class Search extends React.Component {
     }
   }
 
+// component Did Mount \\
+
+  // componentDidMount(){
+  //   fetch('api/v1/fruits.json')
+  //     .then((response) => {return response.json()})
+  //     .then((data) => {this.setState({ fruits: data }) });
+  // }
+
+
 // SEARCH Function \\
 
   search = (query) => {
@@ -28,13 +37,22 @@ class Search extends React.Component {
           this.setState({ searchData: res.articles })
       })
   }
-// // // // // // // // // // // //
+
+// // Selected function // // // // // //
+
+  selected = (url) => {
+    this.setState({
+      selectedArticleUrl: url
+    });
+  }
+
+// // // // // //
 
   render(){
     return (
       <div className='d-flex'>
         { this.state.selectedArticleUrl ? <ArticleMini /> : <SearchBar search={this.search}/> }
-        <ArticlesList />
+        <ArticlesList data={this.state.searchData} selected={this.selected}/>
       </div>
     )
   }
