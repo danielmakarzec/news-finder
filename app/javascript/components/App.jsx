@@ -6,6 +6,10 @@ import Favourite from './Favourite'
 import Nav from './Nav'
 
 class App extends React.Component {
+  constructor(){
+    super()
+    this.state = { color: "green" }
+  }
 
   render(){
     return (
@@ -14,7 +18,7 @@ class App extends React.Component {
           <Nav />
           <Switch>
             <Route path='/' component={Search} exact/>
-            <Route path='/favourite' conponent={Favourite} />
+            <Route path='/favourite' component={Favourite} />
           </Switch>
         </div>
       </BrowserRouter>
