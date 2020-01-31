@@ -13,12 +13,28 @@ const ArticleMini = (props) => {
         <p>{ selectedArticle.content }</p>
       </div>
       <div className='buttons-mini'>
+
         <button className='btn btn-outline-secondary' onClick={()=>props.selected('')} >back to search</button>
-        <button className='btn btn-outline-secondary' onClick={()=>props.addToAPI(props.article.source.name, props.article.title)}>add to favorite</button>
+
+        <button className='btn btn-outline-secondary'
+          onClick={() => {props.addToAPI(
+            selectedArticle.author,
+            selectedArticle.content,
+            selectedArticle.description,
+            selectedArticle.publishedAt,
+            selectedArticle.sourceName,
+            selectedArticle.title,
+            selectedArticle.url,
+            selectedArticle.urlToImage
+            )}}
+          >add to favorite</button>
+
         <a className='btn btn-outline-secondary' href={props.url} target='_blank' >Visit</a>
+
       </div>
     </div>
   )
+  // componentDidMount(){ console.log(props.title) }
 }
 
 export default ArticleMini

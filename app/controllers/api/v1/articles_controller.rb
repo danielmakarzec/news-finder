@@ -1,6 +1,6 @@
 class Api::V1::ArticlesController < ActionController::Base
+  skip_before_action :verify_authenticity_token
   def index
-    # @articles = Article.order(created_at: :desc)
     render json: Article.all
   end
 
