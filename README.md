@@ -1,20 +1,20 @@
-# README
+# NEWS FINDER 2020
 
-Frontend library:
+<h3>Frontend library:</h3>
 
-  "react": "16.12.0",
-  "react-dom": "16.12.0",
-  "react-router-dom": "5.1.2"
+  <pre>"react": "16.12.0",
+"react-dom": "16.12.0",
+"react-router-dom": "5.1.2"</pre>
 
-Backend framework:
+<h3>Backend framework:</h3>
 
-  "Ruby on Rails"
+<pre>"Ruby on Rails": "5.2.4.1"</pre>
 
-Boundler:
+<h3>Boundler:</h3>
 
-  "Webpack"
+<pre>"Webpack": "4.41.5"</pre>
 
-DEMO
+<h3>DEMO</h3>
 
-  http://www.news-finder-318.herokuapp.com
+http://www.news-finder-318.herokuapp.com
 
