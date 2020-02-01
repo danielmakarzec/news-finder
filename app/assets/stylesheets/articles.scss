@@ -235,11 +235,12 @@
 .source{
   padding: 8px 16px;
   margin-left: 16px;
-  color: #444;
+  color: rgba(0,0,0,.6);
   background-color: silver;
   border-radius: 2px;
 }
 em{
+  color: rgba(0,0,0,.6);
   font-weight: 900;
 }
 
