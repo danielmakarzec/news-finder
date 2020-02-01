@@ -5,9 +5,9 @@ const Nav = () => {
 
   return(
     <div id='navbar'>
-      <NavLink to="/">Search</NavLink>
-      <span> / </span>
-      <NavLink to="/favourite">Favourite</NavLink>
+      <NavLink to="/">SEARCH</NavLink>
+      <span> | </span>
+      <NavLink to="/favourite">FAVOURITE</NavLink>
     </div>
   )
 }

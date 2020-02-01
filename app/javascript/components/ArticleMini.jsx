@@ -22,7 +22,7 @@ const ArticleMini = (props) => {
             selectedArticle.content,
             selectedArticle.description,
             selectedArticle.publishedAt,
-            selectedArticle.sourceName,
+            selectedArticle.source.name,
             selectedArticle.title,
             selectedArticle.url,
             selectedArticle.urlToImage
