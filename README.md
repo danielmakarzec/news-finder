@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Frontend library:
 
-Things you may want to cover:
+  "react": "16.12.0",
+  "react-dom": "16.12.0",
+  "react-router-dom": "5.1.2"
 
-* Ruby version
+Backend framework:
 
-* System dependencies
+  "Ruby on Rails"
 
-* Configuration
+Boundler:
 
-* Database creation
+  "Webpack"
 
-* Database initialization
+DEMO
 
-* How to run the test suite
+  http://www.news-finder-318.herokuapp.com
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
