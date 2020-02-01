@@ -16,5 +16,5 @@
 
 <h3>DEMO</h3>
 
-http://www.news-finder-318.herokuapp.com
+http://news-finder-318.herokuapp.com
 
