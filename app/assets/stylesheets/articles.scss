@@ -234,10 +234,12 @@ body{
 
   &:hover, &:hover *{
     background: #a7ff00;
-    color: rgba(green,.5);
+    color: rgba(0,128,0,0.5);
     text-shadow: none;
     text-decoration: none;
+    border-bottom: 1px solid #85cc00;
     border-right: 1px solid #85cc00;
+    border-left: 1px solid #dbff99;
   }
 }
 
