@@ -29,7 +29,7 @@ class Search extends React.Component {
   search = (query) => {
     const API_KEY = '347763cf203e46bba93e258fd536e238';
     const QUERY = query
-    const API_URL = `https://newsapi.org/v2/everything?q=${QUERY}&from=2020-01-27&sortBy=popularity&apiKey=${API_KEY}`;
+    const API_URL = `https://newsapi.org/v2/everything?q=${QUERY}&from=2021-08-01&sortBy=popularity&apiKey=${API_KEY}`;
 
     fetch(API_URL)
       .then(res => res.json())
